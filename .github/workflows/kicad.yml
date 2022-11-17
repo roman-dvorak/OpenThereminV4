@@ -35,7 +35,7 @@ jobs:
           submodules: recursive
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v1_k6
+      - uses: INTI-CMNB/KiBot@v2_k6
         with:
           config: ${{ env.kibot }}/erc.kibot.yaml
           schema: ${{ env.schema }}
@@ -52,7 +52,7 @@ jobs:
           submodules: recursive
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v1_k6
+      - uses: INTI-CMNB/KiBot@v2_k6
         with:
           config: ${{ env.kibot }}/drc.kibot.yaml
           schema: ${{ env.schema }}
@@ -70,7 +70,7 @@ jobs:
           submodules: recursive
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v1_k6
+      - uses: INTI-CMNB/KiBot@v2_k6
         with:
           config: ${{ env.kibot }}/schematics.kibot.yaml
           schema: ${{ env.schema }}
@@ -95,7 +95,7 @@ jobs:
 #           token: ${{ secrets.pat }}
 #          ref: ${{ github.head_ref }}
           
-#       - uses: INTI-CMNB/KiBot@v1_k6
+#       - uses: INTI-CMNB/KiBot@v2_k6
 #         with:
 #           config: ${{ env.kibot }}/placement.kibot.yaml
 #           schema: ${{ env.schema }}
@@ -119,7 +119,7 @@ jobs:
           submodules: recursive
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v1_k6          
+      - uses: INTI-CMNB/KiBot@v2_k6          
         with:
           config: ${{ env.kibot }}/gerbers.kibot.yaml
           schema: ${{ env.schema }}
@@ -144,7 +144,7 @@ jobs:
           submodules: recursive
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v1_k6
+      - uses: INTI-CMNB/KiBot@v2_k6
         with:
           config: ${{ env.kibot }}/cad.kibot.yaml
           schema: ${{ env.schema }}
@@ -168,7 +168,7 @@ jobs:
           submodules: recursive
           ref: ${{ github.head_ref }}
           
-      - uses: INTI-CMNB/KiBot@v1_k6
+      - uses: INTI-CMNB/KiBot@v2_k6
         with:
           config: ${{ env.kibot }}/render.kibot.yaml
           schema: ${{ env.schema }}
