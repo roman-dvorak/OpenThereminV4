@@ -1,0 +1,25 @@
+kibot:
+  version: 1
+
+global:
+   kiauto_time_out_scale: 10
+
+outputs:
+  - name: 'pdf_default_B'
+    type: pdf_pcb_print
+    dir: docs
+    options:
+      mirror: true
+      scaling: 0
+    layers: 
+      - B.Fab
+      - Edge.Cuts
+
+  - name: 'pdf_default_F'
+    type: pdf_pcb_print
+    dir: docs
+    options:
+      scaling: 0
+    layers:
+      - F.Fab
+      - Edge.Cuts
