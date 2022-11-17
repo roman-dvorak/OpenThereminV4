@@ -192,6 +192,28 @@ jobs:
 
     - name: Download a Build Artifact
       uses: actions/download-artifact@v3.0.0
+
+
+    - name: Extract to right position
+      run: |
+        mkdir Doc || true
+        mkdir Doc/img || true
+        #mkdir doc/img/render || true
+        mkdir Electronics_out || true
+        mkdir Electronics_out/manuf || true
+        
+        cp -r doc_img/* Doc/img || true
+        cp -r doc_cad/cad/* Doc || true
+        cp -r hw_cam_profi/* Electronics_out/manuf || true
+        cp -r doc_sch/docs/* Doc || true
+        cp -r doc_sch/img/pcb/* Doc/img || true
+        cp -r doc_placement/* Doc || true
+        
+        rm -r doc_img || true
+        rm -r doc_cad || true
+        rm -r hw_cam_profi || true
+        rm -r doc_sch || true
+        rm -r doc_placement || true
  
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
