@@ -5,8 +5,8 @@ on:
   push:
   
 env:
-  schema: "Electronics/*.kicad_sch"
-  board: "Electronics/*.kicad_pcb"
+  schema: "Electronics/OpenThereminV4.kicad_sch"
+  board: "Electronics/OpenThereminV4.kicad_pcb"
   dir: "Electronics/out"
   kibot: "Doc/assets/kibot"
 
