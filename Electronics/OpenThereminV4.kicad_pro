@@ -34,8 +34,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.7,
-          "width": 1.7
+          "height": 6.0,
+          "width": 5.0
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.19999999999999998
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -55,19 +55,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "clearance|109525000|149380000|ac6b1cd2-bc60-4d15-b2ca-fda125bffb8a|00000000-0000-0000-0000-00006058ec11",
-        "clearance|110830000|149380000|08cb307e-1c64-44a8-85ef-eb48fb044d0d|00000000-0000-0000-0000-00006058ec11",
-        "clearance|114605000|142950000|e65a3724-a53e-4caf-af7f-dd6798038263|00000000-0000-0000-0000-00006061ee78",
-        "clearance|114605000|142965000|d115f4d5-1080-43cd-b86e-967e92ce71b5|00000000-0000-0000-0000-00006061ee78",
-        "clearance|115350000|143710000|70121a8b-b8ff-4d5a-8877-c9511bede04b|00000000-0000-0000-0000-00006061ee78",
-        "clearance|116002000|143738800|f9477f33-0edd-4546-b0a5-06c2b97334b6|00000000-0000-0000-0000-00006061ee78",
-        "clearance|116002000|145029000|efc274a2-5aee-4284-946b-e12d6a2db487|00000000-0000-0000-0000-00006061ee78",
-        "clearance|116472000|131878000|cd43cddd-197e-413a-8786-fc04a561328c|cd2ac28a-d4de-4a89-a516-3970d50a6932",
-        "clearance|116472000|132900500|e3267b76-4f71-4a56-937c-f363e221468d|cd2ac28a-d4de-4a89-a516-3970d50a6932",
-        "clearance|116640000|143710000|6483e515-75a1-451d-b124-6d247d0a0625|00000000-0000-0000-0000-00006061ee78",
-        "courtyards_overlap|108541001|123492385|00000000-0000-0000-0000-00006062b5a7|00000000-0000-0000-0000-000060595ccc"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -98,8 +86,8 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
