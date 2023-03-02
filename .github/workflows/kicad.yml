@@ -82,7 +82,7 @@ jobs:
           config: ${{ env.kibot }}/ibom.kibot.yaml
           schema: ${{ env.schema }}
           board: ${{ env.board }}
-          dir: ${{ env.dir }}_ibom
+          dir: ${{ env.dir }}_docs
           
       - uses: actions/upload-artifact@v2
         if: ${{ success() }}
@@ -208,12 +208,13 @@ jobs:
         mkdir Doc/img || true
         #mkdir doc/img/render || true
         mkdir Electronics_out || true
-        mkdir Electronics_out/manuf || true
+        mkdir Electronics_out/cam_profi || true
+        mkdir Electronics_out/doc || true
         
         cp -r doc_img/* Doc/img || true
         cp -r doc_cad/cad/* Doc || true
-        cp -r hw_cam_profi/* Electronics_out/manuf || true
-        cp -r doc_sch/docs/* Doc || true
+        cp -r hw_cam_profi/* Electronics_out/cam_profi || true
+        cp -r doc_sch/* Electronics_out/doc || true
         cp -r doc_sch/img/pcb/* Doc/img || true
         cp -r doc_placement/* Doc || true
         
