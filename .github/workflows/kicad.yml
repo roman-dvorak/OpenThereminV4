@@ -76,6 +76,14 @@ jobs:
           schema: ${{ env.schema }}
           board: ${{ env.board }}
           dir: ${{ env.dir }}_docs
+                    
+      - uses: INTI-CMNB/KiBot@v2_dk6
+        with:
+          config: ${{ env.kibot }}/ibom.kibot.yaml
+          schema: ${{ env.schema }}
+          board: ${{ env.board }}
+          dir: ${{ env.dir }}_ibom
+          
       - uses: actions/upload-artifact@v2
         if: ${{ success() }}
         with:
